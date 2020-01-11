@@ -12,10 +12,9 @@ To this end, this Vim plug-in prepends a corresponding dictionary of common word
 
 # Installation
 
-Copy the contents of this repository into the folder that contains your vim configuration files;
-it is `~/.vim` on Linux and MacOS and `%USERPROFILE%/vimfiles` on Microsoft Windows.
+Copy the files of this repository, that is, its folders `plugin/` and `dicts/`, into the folder of your vim configuration files, which is `~/.vim` on Linux and MacOS and `%USERPROFILE%/vimfiles` on Microsoft Windows.
 
-If you choose to install this plug-in by a plug-in manager, such as [vim-plug](https://github.com/junegunn/vim-plug), please point `g:common_words_dicts_dir` to the path of the plug-in, in this case
+If you choose to install this plug-in by a plug-in manager (for example, if [vim-plug](https://github.com/junegunn/vim-plug), then by adding `Plug 'konfekt/complete-common-words.vim'` to your `vimrc`), then please point `g:common_words_dicts_dir` to the path of the plug-in, in the case of `vim-plug`
 
 ```vim
   let s:dotfiles = split(&runtimepath, ',')[0]
