@@ -70,11 +70,15 @@ augroup CommonWordsDict
     autocmd OptionSet spelllang
           \ let b:common_words_explicit = 1 |
           \ call SetCommonWordsDict(v:option_new)
+    autocmd OptionSet spell
+        \ if &spell && !empty(&spelllang) && !exists('b:common_words_explicit') |
+        \   call SetCommonWordsDict(&spelllang) |
+        \ endif
   endif
   autocmd BufWinEnter *
-        \ if &l:spell && !exists('b:common_words_explicit') |
-        \   call SetCommonWordsDict(v:option_new)
-        \ endif |
+        \ if &spell && !empty(&spelllang) && !exists('b:common_words_explicit') |
+        \   call SetCommonWordsDict(&spelllang) |
+        \ endif
 augroup end
 if argc() > 1
   silent doautocmd CommonWordsDict BufWinEnter
