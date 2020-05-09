@@ -26,7 +26,7 @@ If you choose to install this plug-in by a plug-in manager (for example, if [vim
 
 To automatically detect the spellcheck language of a buffer, install the plug-in [vim-DetectSpellLang](https://github.com/Konfekt/vim-DetectSpellLang).
 
-The [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete) plug-in offers `Tab` completion (instead of the more acrobatic `Ctrl-N` and `Ctrl-P`) for Vim's built-in completion methods (see `:help ins-completion`) such as
+The [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete/wiki/Suggested-Setup-for-Prose) plug-in offers `Tab` completion (instead of the more acrobatic `Ctrl-N` and `Ctrl-P`) for Vim's built-in completion methods (see `:help ins-completion`) such as
 
 - keywords in the open buffers,
 - keywords in (spell check) dictionaries,
